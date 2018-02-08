@@ -29,7 +29,7 @@ function generate(count) {
     captcha.use(drawLines1);
     captcha.use(drawText);
     captcha.use(drawWarp);
-    //captcha.use(drawLines2);
+    captcha.use(drawLines2);
     captcha.use(drawResize);
      
     captcha.generate(); // Draws the image to the canvas 
@@ -68,4 +68,4 @@ function randomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-generate(10);
+generate(0);
